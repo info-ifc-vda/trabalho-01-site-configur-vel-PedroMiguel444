@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo do Cinema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="menu-btn" onclick="abrirMenu()">
+        ☰
+    </div>
+
+    <div class="menu-lateral" id="menu">
+        <h2>Filmes</h2>
+        <a href="https://www.youtube.com/watch?v=fbS0efVvkVU">Batman</a>
+        <a href="https://www.youtube.com/watch?v=i6avfCqKcQo&t=1s">Interestelar</a>
+        <a href="https://www.youtube.com/watch?v=3g6WChxY14I">Vingadores</a>
+    </div>
+    <header>
+        <h1>Mundo do Cinema</h1>
+    </header>
+    <div class="banner">
+        <h2>O Universo do Cinema</h2>
+    </div>
+    <section>
+        <h2>Filmes em Destaque</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="imgs/interestelar.jpg">
+                <h3>Interestelar</h3>
+                <p>Uma jornada épica pelo espaço e pelo tempo.</p>
+            </div>
+            <div class="card">
+                <img src="imgs/batman.jpg">
+                <h3>Batman</h3>
+                <p>O Cavaleiro das Trevas enfrenta o crime em Gotham.</p>
+            </div>
+            <div class="card">
+                <img src="imgs/vingadores.jpg">
+                <h3>Vingadores</h3>
+                <p>Os maiores heróis unidos para salvar o mundo.</p>
+            </div>
+        </div>
+    </section>
+    <section class="galeria">
+        <h2>🎥 Galeria de Filmes</h2>
+        <img id="imagemPrincipal" class="principal" src="imgs/vingadores.jpg">
+        <div class="miniaturas">
+            <img src="imgs/vingadores.jpg" onclick="trocarImagem(this.src)">
+            <img src="imgs/interestelar.jpg" onclick="trocarImagem(this.src)">
+            <img src="imgs/batman.jpg" onclick="trocarImagem(this.src)">
+            <img src="imgs/vingadores2.jpg" onclick="trocarImagem(this.src)">
+
+        </div>
+
+    </section>
+    <section>
+        <h2>Curiosidades do Cinema</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Qual foi o primeiro filme da história?
+                </div>
+                <div class="accordion-content">
+                    <p>
+                        O primeiro filme da história foi criado pelos irmãos Lumière em 1895.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Qual é o herói mais popular?
+                </div>
+                <div class="accordion-content">
+                    <p>
+                        Batman e Homem-Aranha estão entre os mais famosos.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Qual filme ganhou mais Oscars?
+                </div>
+                <div class="accordion-content">
+                    <p>
+                        Titanic, Ben-Hur e Senhor dos Anéis possuem 11 Oscars cada.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="carrossel">
+        <h2>Carrossel de Filmes</h2>
+        <img id="slide" src="imgs/batman.jpg">
+
+        <div class="botoes">
+            <button onclick="anterior()">⬅ Anterior</button>
+            <button onclick="proximo()">Próximo ➡</button>
+        </div>
+    </section>
+    <button class="btn-config" onclick="abrirPainel()">
+        ⚙
+    </button>
+    <div class="painel" id="painel">
+        <h3>⚙ Configurações</h3>
+        <button onclick="trocarTema()">
+            Tema Claro/Escuro
+        </button>
+        <button onclick="aumentarFonte()">
+            Aumentar Fonte
+        </button>
+        <button onclick="diminuirFonte()">
+            Diminuir Fonte
+        </button>
+    </div>
+    <footer>
+        <p>© 2026 CineWorld</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
